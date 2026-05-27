@@ -1,7 +1,7 @@
 import os
 import json
 import requests
-
+ 
 from openai import OpenAI
 from telegram import Update
 from telegram.ext import (
@@ -11,6 +11,31 @@ from telegram.ext import (
     ContextTypes,
     filters
 )
+user_modes = {}
+async def teacher(update: Update, context: ContextTypes.DEFAULT_TYPE):
+
+    user_id = update.message.from_user.id
+
+    user_modes[user_id] = (
+        "You are a strict but helpful programming teacher."
+    )
+
+    await update.message.reply_text(
+        "Teacher mode activated 👨‍🏫"
+    )
+
+
+async def motivator(update: Update, context: ContextTypes.DEFAULT_TYPE):
+
+    user_id = update.message.from_user.id
+
+    user_modes[user_id] = (
+        "You are a motivational mentor helping users stay disciplined and focused."
+    )
+
+    await update.message.reply_text(
+        "Motivator mode activated 🔥"
+    ) 
 
 # =========================
 # ENV VARIABLES (IMPORTANT)
@@ -33,19 +58,23 @@ client = OpenAI(
 # =========================
 
 def load_memory(user_id):
+
     file = f"{user_id}.json"
 
     if os.path.exists(file):
+
         with open(file, "r") as f:
             return json.load(f)
 
     return [
         {
             "role": "system",
-            "content": "You are a helpful AI mentor for Python, AI, and automation."
+            "content": user_modes.get(
+                user_id,
+                "You are a helpful AI mentor for Python, AI, and automation."
+            )
         }
     ]
-
 
 def save_memory(user_id, messages):
     file = f"{user_id}.json"
@@ -125,3 +154,5 @@ app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, chat))
 
 print("Bot running...")
 app.run_polling()
+app.add_handler(CommandHandler("teacher", teacher))
+app.add_handler(CommandHandler("motivator", motivator))

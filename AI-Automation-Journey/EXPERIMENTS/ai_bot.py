@@ -5,6 +5,7 @@ client = OpenAI(
     api_key="YOUR_OPENROUTER_API_KEY"
 )
 
+
 messages = [
 
     {
