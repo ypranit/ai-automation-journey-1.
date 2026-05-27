@@ -17,7 +17,7 @@ from telegram.ext import (
 # TELEGRAM TOKEN
 # -------------------------
 
-TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
+TOKEN = os.getenv("TOKEN")
 
 # -------------------------
 # OPENROUTER AI
@@ -25,7 +25,7 @@ TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
 
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="YOUR_OPENROUTER_API_KEY""
+    api_key=os.getenv("OPENROUTER_API_KEY")
 
 )
 
