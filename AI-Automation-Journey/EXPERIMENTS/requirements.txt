@@ -1,3 +1,7 @@
 python-telegram-bot
 openai
 requests
+python-weather
+openai-whisper
+torch
+python-dotenv
