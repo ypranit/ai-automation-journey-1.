@@ -1,4 +1,5 @@
 import os
+import shutil
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -26,7 +27,9 @@ TOKEN = os.getenv("TOKEN")
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")  
 
 
-NEWS_API_KEY = os.getenv("NEWS_API_KEY")
+NEWS_API_KEY = os.getenv("NEWS_API_KEY") 
+
+print("FFMPEG FOUND:", shutil.which("ffmpeg"))
 
 # =========================
 # OPENROUTER CLIENT
