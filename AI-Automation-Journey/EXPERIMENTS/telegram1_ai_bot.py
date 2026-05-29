@@ -23,10 +23,8 @@ from telegram.ext import (
 
 TOKEN = os.getenv("TOKEN")
 
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
-print("TOKEN:", TOKEN is not None)
-print("OPENROUTER:", OPENROUTER_API_KEY is not None)
-print("NEWS:", NEWS_API_KEY is not None)
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")  
+
 
 NEWS_API_KEY = os.getenv("NEWS_API_KEY")
 
