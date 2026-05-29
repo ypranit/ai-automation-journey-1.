@@ -337,16 +337,15 @@ async def voice_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         def transcribe():
 
-    import whisper
+        import whisper
 
-    model = whisper.load_model("base")
+        model = whisper.load_model("base")
 
-    result = model.transcribe(
+        result = model.transcribe(
         temp_path
-    )
+        )
 
-    return result["text"]
-
+        return result["text"]
 
         transcript = await asyncio.to_thread(
             transcribe
