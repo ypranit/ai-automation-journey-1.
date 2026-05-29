@@ -337,20 +337,16 @@ async def voice_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         def transcribe():
 
-            import whisper
+    import whisper
 
-            os.environ["PATH"] += (
-                os.pathsep +
-                r"C:\Users\suffe\Downloads\ffmpeg-2026-05-25-git-34dfa8bf2b-essentials_build (2)\ffmpeg-2026-05-25-git-34dfa8bf2b-essentials_build\bin"
-            )
+    model = whisper.load_model("base")
 
-            model = whisper.load_model("base")
+    result = model.transcribe(
+        temp_path
+    )
 
-            result = model.transcribe(
-                temp_path
-            )
+    return result["text"]
 
-            return result["text"]
 
         transcript = await asyncio.to_thread(
             transcribe
