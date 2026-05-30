@@ -1,28 +1,31 @@
 # AI Automation Journey Roadmap
 
-## Version 1 (Completed)
-- [x] Telegram Bot
-- [x] AI Chat
-- [x] Memory
-- [x] Voice Transcription
-- [x] News Search
-- [x] Railway Deployment
-- [x] GitHub Auto Deploy
+## Version 1 ✅
 
-## Version 2
-- [ ] Image Generation
-- [ ] PDF Chat
-- [ ] Web Search
-- [ ] Better Memory
-- [ ] User Profiles
+* Telegram AI Chat
+* OpenRouter Integration
+* Voice Transcription (Whisper)
+* News Search
+* Railway Deployment
+* GitHub Auto Deploy
+
+## Version 2 🚧
+
+* User Memory System
+* Notes Storage
+* Better Error Handling
+* Conversation History
 
 ## Version 3
-- [ ] Discord Bot
-- [ ] Web Dashboard
-- [ ] AI Agents
-- [ ] Multi-user Support
 
-## Long Term
-- [ ] SaaS Product
-- [ ] Paying Users
-- [ ] Portfolio Website  
+* PDF Analysis
+* Image Understanding
+* Image Generation
+* Web Search
+
+## Version 4
+
+* Multi-Agent System
+* Personal Assistant Features
+* Calendar Integration
+* Task Management

@@ -1,52 +1,33 @@
-# 🤖 AI Automation Journey #1
+# AI Automation Journey 1
 
-A multi-modal Telegram AI Assistant built with Python and deployed on Railway.
+A multi-modal Telegram AI assistant built using Python, OpenRouter, Whisper, Railway and GitHub.
 
 ## Features
 
-- 💬 AI Chat using OpenRouter
-- 🎤 Voice Message Transcription using Whisper
-- 📰 News Search
-- ☁️ Railway Deployment
-- 🔄 GitHub Auto Deploy
-- 👤 User Profiles
-- 📝 Persistent Notes
+* AI Chat Assistant
+* Voice Message Transcription
+* News Search
+* Notes System
+* User Profiles
+* Railway Cloud Deployment
+* GitHub Auto Deploy
 
 ## Tech Stack
 
-- Python
-- Telegram Bot API
-- OpenRouter
-- OpenAI Whisper
-- Railway
-- GitHub
+* Python
+* Telegram Bot API
+* OpenRouter
+* OpenAI Whisper
+* Railway
+* GitHub
 
-## Commands
+## Run Locally
 
-/start - Start bot
+```bash
+pip install -r requirements.txt
+python telegram1_ai_bot.py
+```
 
-Send:
-- Text messages
-- Voice notes
-- News queries
+## Roadmap
 
-## Lessons Learned
-
-- Environment Variables
-- API Integration
-- Railway Deployment
-- Git & GitHub
-- ffmpeg Configuration
-- Debugging Production Issues
-
-## Future Plans
-
-- Long-term Memory
-- Image Generation
-- PDF Analysis
-- Web Search
-- Agent Features
-
-## Author
-
-Pranit
+See ROADMAP.md
