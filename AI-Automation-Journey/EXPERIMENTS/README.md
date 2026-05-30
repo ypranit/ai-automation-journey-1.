@@ -1,102 +1,52 @@
-# 🤖 Multi-Modal AI Telegram Assistant
+# 🤖 AI Automation Journey #1
 
-A powerful AI Telegram bot built with Python, OpenRouter, Whisper AI, and NewsAPI.
+A multi-modal Telegram AI Assistant built with Python and deployed on Railway.
 
-## 🚀 Features
+## Features
 
-* 💬 AI Chat Assistant
-* 🎤 Voice Message Transcription (Whisper AI)
-* 🌐 Internet News Search
-* 🌤 Weather System
-* 📝 Notes System
-* 🧠 Memory Conversations
-* 🔥 Async Telegram Architecture
+- 💬 AI Chat using OpenRouter
+- 🎤 Voice Message Transcription using Whisper
+- 📰 News Search
+- ☁️ Railway Deployment
+- 🔄 GitHub Auto Deploy
+- 👤 User Profiles
+- 📝 Persistent Notes
 
----
+## Tech Stack
 
-# 🛠 Technologies Used
+- Python
+- Telegram Bot API
+- OpenRouter
+- OpenAI Whisper
+- Railway
+- GitHub
 
-* Python
-* python-telegram-bot
-* OpenRouter API
-* Whisper AI
-* NewsAPI
-* FFmpeg
-* Asyncio
+## Commands
 
----
+/start - Start bot
 
-# 📦 Installation
+Send:
+- Text messages
+- Voice notes
+- News queries
 
-## Clone Repository
+## Lessons Learned
 
-```bash
-git clone https://github.com/ypranit/ai-automation-journey-1.git
-```
+- Environment Variables
+- API Integration
+- Railway Deployment
+- Git & GitHub
+- ffmpeg Configuration
+- Debugging Production Issues
 
----
+## Future Plans
 
-## Install Dependencies
+- Long-term Memory
+- Image Generation
+- PDF Analysis
+- Web Search
+- Agent Features
 
-```bash
-pip install -r requirements.txt
-```
+## Author
 
----
-
-# 🔑 Environment Variables
-
-Create a `.env` file:
-
-```env
-TOKEN=YOUR_TELEGRAM_BOT_TOKEN
-OPENROUTER_API_KEY=YOUR_OPENROUTER_API_KEY
-NEWS_API_KEY=YOUR_NEWS_API_KEY
-```
-
----
-
-# ▶️ Run Bot
-
-```bash
-python telegram1_ai_bot.py
-```
-
----
-
-# 🎤 Voice AI Setup
-
-Install FFmpeg:
-
-https://www.gyan.dev/ffmpeg/builds/
-
-Whisper uses FFmpeg to process Telegram voice messages.
-
----
-
-# 📜 Commands
-
-| Command       | Description    |
-| ------------- | -------------- |
-| /start        | Start bot      |
-| /help         | Show commands  |
-| /weather city | Weather info   |
-| /note text    | Save note      |
-| /notes        | Show notes     |
-| /search topic | AI news search |
-
----
-
-# 🧠 Future Upgrades
-
-* 📸 Image AI
-* 🧠 Long-Term Memory
-* ☁️ Railway Deployment
-* 🌍 Multi-language Support
-* 🖼 AI Image Generation
-
----
-
-# 👨‍💻 Author
-
-Built by Pranit 🚀
+Pranit
